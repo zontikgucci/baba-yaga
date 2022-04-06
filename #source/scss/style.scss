@@ -3,7 +3,7 @@
 
 // Шрифты ============================================
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap);
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:500&display=swap);
 body {
 	font-family: "Dancing Script";
 }
@@ -70,7 +70,8 @@ body {
 			display: inline-block;
 			font-size: 30px;
 			font-weight: 700;
-			letter-spacing: 2.5px;
+			padding: 0px 1px;
+			letter-spacing: .5px;
 			animation: bounce 2.2s ease-in-out infinite;
 			color: rgba(255, 255, 255, 0.9);
 		}
@@ -78,8 +79,9 @@ body {
 	}
 
 	&__name {
-		font-family: "Helvetica Neue";
-		letter-spacing: .5px;
+		font-family: "Open Sans";
+		font-weight: 500;
+		letter-spacing: 1px;
 		margin: 0px 0px 20px 0px;
 		font-size: 13px;
 		padding: 5px 25px 5px 10px;
@@ -89,6 +91,7 @@ body {
 		border-radius: 5px;
 		background: rgb(255, 255, 255, .9);
 		&::placeholder {
+			
 			color: rgba(49, 28, 28, 0.9);
 		}
 	}	
@@ -98,8 +101,9 @@ body {
 	}
 
 	&__password {
-		font-family: "Helvetica Neue";
-		letter-spacing: .5px;
+		font-family: "Open Sans";
+		font-weight: 500;
+		letter-spacing: 1px;
 		margin: 0px 0px 20px 0px;
 		font-size: 13px;
 		padding: 5px 25px 5px 10px;
@@ -125,14 +129,16 @@ body {
 	}
 
 	&__button {
-		font-family: "Helvetica Neue";
-		letter-spacing: .5px;
+		font-family: "Open Sans";
+		font-weight: 500;
+		letter-spacing: 1px;
 		font-size: 14px;
 		outline: none;
 		border: none;
 		background: none;
 		color: rgba(255, 255, 255, 0.9);
 		transition: all .4s ease 0s;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		&:hover {
 			color: rgba(197, 17, 17, 0.9);
 		}

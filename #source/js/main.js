@@ -27,7 +27,7 @@ function show_hide_password(target) {
 // speed video
 function speed_video() {
 	var video = document.getElementById('video-speed');
-	video.playbackRate = .8;
+	video.playbackRate = .8
 }
 speed_video();
 
