@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Baba Yaga</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/preview.png" type="image/png">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="fullscreen">
+			<video autoplay loop muted preload="auto" class="fullscreen__video" id="video-speed">
+				<source src="video/2.webm" type="video/webm">
+				<source src="video/2.mp4" type="video/mp4">
+			</video>
+			<div class="fullscreen__body">
+				<div class="fullscreen__title">Baba Yaga</div>
+				<form action="" class="fullscreen__form">
+					<input type="text" class="fullscreen__name" placeholder="login">
+					<div class="fullscreen__body-password">
+						<input type="password" id="password-input" class="fullscreen__password" placeholder="password">
+						<a href="#" class="fullscreen__password-control" onclick="return show_hide_password(this);"></a>
+					</div>
+					<button class="fullscreen__button">SEND</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

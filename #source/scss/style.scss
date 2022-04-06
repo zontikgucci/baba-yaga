@@ -1,0 +1,162 @@
+// Обнуление ========================================
+@import "reset";
+
+// Шрифты ============================================
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:500,700&display=swap);
+
+body {
+	font-family: "Dancing Script";
+}
+
+.ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	img {
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.fullscreen {
+	flex: 1 1 auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__video {
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__body {
+		width: 300px;
+		height: 200px;
+		background-color: rgba(237,123,63, .9);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 30px;
+		animation: shadow 4.2s infinite linear;
+		position: relative;
+		z-index: 50;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;	
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: 5px;
+		margin: 0px 0px 20px 0px;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	&__name {
+		letter-spacing: .2px;
+		margin: 0px 0px 20px 0px;
+		font-weight: 400;
+		font-size: 13px;
+		padding: 5px 25px 5px 10px;
+		outline: none;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		background: rgb(255, 255, 255, .9);
+		&::placeholder {
+			color: rgba(49, 28, 28, 0.9);
+		}
+	}	
+
+	&__body-password {
+		position: relative;
+	}
+
+	&__password {
+		letter-spacing: .2px;
+		margin: 0px 0px 20px 0px;
+		font-weight: 400;
+		font-size: 13px;
+		padding: 5px 25px 5px 10px;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		background: rgb(255, 255, 255, .9);
+		&::placeholder {
+				color: rgba(49, 28, 28, 0.9);
+			}
+	}
+
+	&__password-control {
+		&.view {background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;}			
+		position: absolute;
+		top: 6px;
+		right: 5px;
+		display: inline-block;
+	 	width: 15px;
+		height: 15px;
+		opacity: 0.9;
+		background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+	}
+
+	&__button {
+		letter-spacing: .2px;
+		font-weight: 500;
+		font-size: 14px;
+		outline: none;
+		border: none;
+		background: none;
+		color: rgba(255, 255, 255, 0.9);
+		transition: all .4s ease 0s;
+		&:hover {
+			color: rgba(32, 2, 2, 0.9);
+		}
+	}
+
+}
+@keyframes shadow {
+	0% {
+		box-shadow: 0px 0px 40px 5px  rgba(135,116,148, .9);
+	
+	}
+	50% {
+		box-shadow: 0px 0px 40px 20px rgb(130, 88, 159, .9);
+	}
+
+	100%{
+		box-shadow: 0px 0px 40px 5px rgba(135,116,148, .9);
+	}
+}
