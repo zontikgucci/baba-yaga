@@ -65,11 +65,16 @@ body {
 	}
 
 	&__title {
-		font-size: 30px;
-		font-weight: 700;
-		letter-spacing: 5px;
 		margin: 0px 0px 20px 0px;
-		color: rgba(255, 255, 255, 0.9);
+		span {
+			display: inline-block;
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: 2.5px;
+			animation: bounce 2.2s ease-in-out infinite;
+			color: rgba(255, 255, 255, 0.9);
+		}
+	
 	}
 
 	&__name {
@@ -145,5 +150,19 @@ body {
 
 	100%{
 		box-shadow: 0px 0px 40px 5px rgba(135,116,148, .9);
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-2px);
+	}
+
+	100% {
+		transform: translateY(0);
 	}
 }
