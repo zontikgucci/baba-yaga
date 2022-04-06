@@ -1,7 +1,7 @@
 /*
 reset
 */
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script:500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap);
 html,
 body,
 div,
@@ -555,9 +555,9 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 .fullscreen__name {
-  letter-spacing: 0.2px;
+  font-family: "Helvetica Neue";
+  letter-spacing: 0.5px;
   margin: 0px 0px 20px 0px;
-  font-weight: 400;
   font-size: 13px;
   padding: 5px 25px 5px 10px;
   outline: none;
@@ -585,9 +585,9 @@ body {
   position: relative;
 }
 .fullscreen__password {
-  letter-spacing: 0.2px;
+  font-family: "Helvetica Neue";
+  letter-spacing: 0.5px;
   margin: 0px 0px 20px 0px;
-  font-weight: 400;
   font-size: 13px;
   padding: 5px 25px 5px 10px;
   outline: none;
@@ -624,8 +624,8 @@ body {
   background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
 }
 .fullscreen__button {
-  letter-spacing: 0.2px;
-  font-weight: 500;
+  font-family: "Helvetica Neue";
+  letter-spacing: 0.5px;
   font-size: 14px;
   outline: none;
   border: none;
@@ -636,7 +636,7 @@ body {
   transition: all 0.4s ease 0s;
 }
 .fullscreen__button:hover {
-  color: rgba(32, 2, 2, 0.9);
+  color: rgba(197, 17, 17, 0.9);
 }
 
 @-webkit-keyframes shadow {
